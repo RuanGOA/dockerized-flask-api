@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  dockerized-api:
+    build: ./
+    restart: unless-stopped
+    volumes:
+      - ./:/app:cached
+    ports:
+      - $API_PORT:$API_PORT
+    environment:
+      - API_PORT=${API_PORT}
