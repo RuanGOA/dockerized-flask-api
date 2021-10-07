@@ -1,0 +1,4 @@
+flask==1.1.2
+flask_api==2.0.0
+flask_cors==3.0.8
+werkzeug==0.16.0
