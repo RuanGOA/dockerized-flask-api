@@ -8,8 +8,9 @@ hi = Blueprint('hi', __name__)
 
 @hi.route('/', methods=['GET'])
 def get_hi():
+    
     hi_body = {
-        'hi': 'Hi :D'
+        'hi': ['Hi', 'Hola', 'Hei', 'Hi']
     }
 
     return Response(
