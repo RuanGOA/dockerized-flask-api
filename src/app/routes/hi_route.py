@@ -10,7 +10,7 @@ hi = Blueprint('hi', __name__)
 def get_hi():
     
     hi_body = {
-        'hi': ['Hi', 'Hola', 'Hei', 'Hi']
+        'hi': ['Hi', 'Hola', 'Hei', 'Hi', 'Hi']
     }
 
     return Response(
